@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Analyzer</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/337/337938.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="dark-mode">
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-file-pdf"></i>
+                <span>PDF Analyzer</span>
+            </div>
+            <nav>
+                <button class="nav-button active" data-section="analyzer">ANALYZER</button>
+                <button class="nav-button" data-section="sobre">SOBRE</button>
+                <button class="nav-button" data-section="creditos">CRÉDITOS</button>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Analyzer Section -->
+            <section id="analyzer" class="section active">
+                <div class="chat-container">
+                    <!-- Área de upload inicial -->
+                    <div id="upload-area" class="upload-area">
+                        <div class="upload-box">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <h2>Faça upload de um PDF para começar</h2>
+                            <p>Arraste e solte ou clique para selecionar</p>
+                            <input type="file" id="pdf-input" accept=".pdf" hidden>
+                            <button id="upload-button">Escolher arquivo PDF</button>
+                        </div>
+                    </div>
+
+                    <!-- Chat messages -->
+                    <div id="chat-messages" class="chat-messages" style="display: none;">
+                        <!-- Mensagens serão inseridas aqui dinamicamente -->
+                    </div>
+
+                    <!-- Input area -->
+                    <div id="input-area" class="input-area" style="display: none;">
+                        <div class="input-container">
+                            <input type="text" id="message-input" placeholder="Digite sua pergunta sobre o PDF..." disabled>
+                            <button id="send-button" disabled>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sobre Section -->
+            <section id="sobre" class="section">
+                <div class="content-box">
+                    <h2>Sobre o Projeto</h2>
+                    <div class="content">
+                        <p>O PDF Analyzer é uma ferramenta avançada que utiliza inteligência artificial para analisar e responder perguntas sobre documentos PDF.</p>
+                        <h3>Funcionalidades:</h3>
+                        <ul>
+                            <li>Análise inteligente de PDFs</li>
+                            <li>Respostas precisas baseadas no conteúdo</li>
+                            <li>Interface moderna e intuitiva</li>
+                            <li>Suporte a múltiplos idiomas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Créditos Section -->
+            <section id="creditos" class="section">
+                <div class="content-box">
+                    <h2>Créditos</h2>
+                    <div class="content">
+                        <div class="author-info">
+                            <img src="https://github.com/carrosvelozes.png" alt="Leonardo Souza Faria de Moraes" class="author-image">
+                            <h3>Leonardo Moraes</h3>
+                            <p>Desenvolvedor</p>
+                            <p class="supervisor">Orientação: Prof. Carlos Eduardo Beluzo</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/carrosvelozes" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://instagram.com/wyci" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PDF Analyzer</h3>
+                    <p>Análise de pdfs com IA utilizando o modelo DEEPSEEK R1</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>moraes.souza@aluno.ifsp.edu.br</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/carrosvelozes" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/wyci" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2025 PDF Analyzer.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

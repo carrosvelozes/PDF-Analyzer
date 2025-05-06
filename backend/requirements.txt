@@ -1,0 +1,97 @@
+# === APIs e Servidor ===
+# Framework web moderno e rápido para construir APIs com Python 3.7+ baseado em type hints.
+fastapi==0.96.0
+# Servidor ASGI leve e de alto desempenho, usado para rodar aplicações FastAPI.
+uvicorn==0.22.0
+# Permite o envio e recebimento de arquivos multipart/form-data (como uploads de PDF).
+python-multipart==0.0.6
+# Biblioteca para validação de dados com tipagem forte, usada pelo FastAPI (v2 com melhorias de performance).
+pydantic==2.11.1
+# Complemento para Pydantic que permite carregar configurações via arquivos .env.
+pydantic-settings==2.2.1
+# Carrega variáveis de ambiente de arquivos .env para o ambiente Python.
+python-dotenv==1.0.1
+
+
+# === PDF e Processamento ===
+# Biblioteca para manipular e extrair texto de arquivos PDF.
+PyPDF2==3.0.1
+# Converte páginas de PDF em imagens (útil para processar PDFs com conteúdo gráfico).
+pdf2image==1.16.0
+# Biblioteca robusta para análise e extração detalhada de texto de PDFs (suporte a layout).
+pdfminer==20191125
+# Wrapper do pdfminer com interface mais fácil para extração de texto e layout de PDFs.
+pdfplumber==0.10.3
+
+
+# === Machine Learning (ML) e Processamento de Linguagem Natural (NLP) ===
+# Biblioteca principal para deep learning, utilizada para treinar e executar modelos de ML.
+torch==2.3.1
+# Biblioteca da Hugging Face para trabalhar com modelos pré-treinados de NLP.
+transformers==4.44.0
+# Otimiza o uso de modelos Hugging Face em diferentes dispositivos (CPU/GPU).
+accelerate==0.31.0
+# Tokenizador usado por muitos modelos LLM (ex: T5, BERT) que não usam tokenização baseada em palavras.
+sentencepiece
+# Biblioteca da Meta para busca vetorial eficiente (indexação e busca com embeddings).
+faiss-cpu==1.8.0
+# Biblioteca para computação científica com arrays/matrizes. Base do PyTorch e muitos outros pacotes.
+numpy==1.26.4
+# Criação e uso de embeddings semânticos (vetores de texto) para tarefas de NLP.
+sentence-transformers==2.6.0
+# Permite quantização de modelos para reduzir o uso de memória e acelerar a inferência.
+bitsandbytes==0.42.0
+# Formato eficiente de serialização para pesos de modelos, mais rápido e seguro que pickle.
+safetensors==0.4.2
+# Integra modelos Hugging Face com otimizações específicas (ex: ONNX, quantização, aceleração).
+optimum==1.18.0
+# Suporte para modelos quantizados (como LLMs otimizados para uso em CPUs/GPUs com menos memória).
+auto-gptq==0.6.0
+# Detecta automaticamente o idioma de um texto (útil em NLP multilingue).
+langdetect==1.0.9
+
+# Adicionado para uso do Ollama
+ollama==0.4.8
+
+# Dependências principais
+pdftool==0.2.4
+reportlab==4.2.0
+typer==0.9.0
+pyPDF2==3.0.1
+
+# Processamento de PDF
+pdf2text==1.5.4
+textract==1.6.5
+openai==1.13.3
+
+# Processamento de texto e análise
+nltk==3.8.1
+spacy==3.7.4
+gensim==4.3.2
+textblob==0.17.1
+transformers==4.44.0
+sentence-transformers==2.6.0
+faiss-cpu==1.8.0
+scikit-learn==1.4.1.post1
+
+# IA e modelos
+deepseek-ai==0.0.1
+
+# Utilidades
+python-dateutil==2.8.2
+numpy==1.26.4
+pandas==2.2.2
+requests==2.31.0
+tqdm==4.66.4
+jsonschema==4.21.1
+langchain==0.1.12
+rich==13.7.1
+tabulate==0.9.0
+psutil==5.9.8
+pytest==8.0.2
+shortuuid==1.0.11
+einops==0.7.0
+
+# Gestão de ambiente e monitoramento
+watchdog==4.0.0
+pyyaml==6.0.1
