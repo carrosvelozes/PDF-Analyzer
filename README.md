@@ -136,9 +136,8 @@ Projeto web/
 ```
 
 ## Créditos
-- **Desenvolvedor:** Leonardo Souza Faria de Moraes ([GitHub](https://github.com/carrosvelozes))
+- **Desenvolvedor:** Leonardo Moraes
 - **Orientação:** Prof. Carlos Eduardo Beluzo
-- **Contato:** moraes.souza@aluno.ifsp.edu.br
 
 ## Licença
 Este projeto é acadêmico e pode ser adaptado para fins educacionais e de pesquisa. 
